@@ -1,14 +1,20 @@
-let num=8;
+function checkprime(num){
 
 let count=0;
-for(let i=0;i>=8;i-+){
+for(let i=1;i<=num;i++){
   if(num%i==0){
     count++;
   }
 }
-if(count==0){
-  console.log(num,"prime");
+if(count==2){
+  return true;
+}
+  return false;
+}
+let ans=checkprime(10);
+if(ans==true){
+console.log("Prime");
 }
 else{
-  console.log(num,"Not a prime");
+console.log("Not Prime");
 }
